@@ -1,9 +1,9 @@
 version: '3.7'
 
 services:
-  db:
+  bd:
     image: mariadb:latest
-    container_name: db
+    container_name: bd
     environment:
       MYSQL_ROOT_PASSWORD: 1234
     restart: always
@@ -14,4 +14,4 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - db
+      - bd
